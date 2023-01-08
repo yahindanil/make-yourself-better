@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/Main.css" />
+    <link rel="stylesheet" href="assets/css/Links.css" />
+    <link rel="stylesheet" href="assets/css/Header.css" />
+    <link rel="stylesheet" href="assets/css/Timer.css" />
+
     <script src="scripts/linkButton.js"></script>
+    <script src="scripts/timer.js"></script>
+
     <title>Сделай себя лучше!</title>
   </head>
 
@@ -21,31 +28,46 @@
         <div class="links-to-start-block">
           <h2 class="lintk-to-start-header">Ссылки:</h2>
           <div class="links-to-start">
-            <div class="unil-liks">
+            <div class="links-container">
               <a
-                class="link-to-start-item"
+                class="link-to-start-item button"
                 href="https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
               >
                 LofiGirl
               </a>
-              <a class="link-to-start-item" href="https://learn.javascript.ru/">
+              <a
+                class="link-to-start-item button"
+                href="https://learn.javascript.ru/"
+              >
                 LearnJavaScript
               </a>
               <a
-                class="link-to-start-item"
+                class="link-to-start-item button"
                 href="https://docs.google.com/document/d/1feWvbbsMW4zLiFgQLqTqNR1UU4IEevh4XN-0fDk1qFY/edit"
               >
                 Document
               </a>
             </div>
-            <div class="open_all_links_button">
-              <input
+            <div>
+              <button
+                class="open_all_links_button button"
                 id="open_all_links"
-                type="button"
-                value="Открыть всё!"
                 onclick="openAllLinks()"
-              />
+              >
+                Открыть всё!
+              </button>
             </div>
+          </div>
+        </div>
+
+        <div class="timer-block">
+          <div class="timer-container">
+            <div class="timer">00:00:00</div>
+          </div>
+          <div class="timer-controls">
+            <button class="timer-button button" id="start">Start</button>
+            <button class="timer-button button" id="stop">Stop</button>
+            <button class="timer-button button" id="reset">Reset</button>
           </div>
         </div>
       </div>
