@@ -1,13 +1,13 @@
-.timer-block {
+.time-block {
   border: 3px solid black;
   padding: 10px;
   border-radius: 7px;
   margin-bottom: 10px;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.timer-container {
+.time-container {
   font-size: 60px;
   border: 3px solid black;
   border-radius: 7px;
@@ -16,7 +16,11 @@
   width: 250px;
 }
 
-.timer {
+.time-block-item {
+  margin: 0 auto;
+}
+
+.time {
   margin-left: 19px;
 }
 
@@ -26,8 +30,19 @@
   justify-content: space-between;
 }
 
-.timer-button {
+.time-button {
   font-size: 20px;
   width: 80px;
   margin: 0;
+}
+
+.best-time-contols {
+  display: flex;
+  justify-content: center;
+}
+
+.timer-header {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 6px;
 }

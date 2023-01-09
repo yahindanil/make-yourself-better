@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="assets/images/pencil.png" />
 
     <link rel="stylesheet" href="assets/css/Main.css" />
     <link rel="stylesheet" href="assets/css/Links.css" />
@@ -60,15 +61,44 @@
           </div>
         </div>
 
-        <div class="timer-block">
-          <div class="timer-container">
-            <div class="timer">00:00:00</div>
+        <div class="time-block">
+          <div class="timer-section time-block-item">
+            <h3 class="timer-header">Таймер</h3>
+            <div class="time-container">
+              <div class="timer time">00:00:00</div>
+            </div>
+
+            <div class="timer-controls">
+              <button class="time-button button" id="start">Start</button>
+              <button class="time-button button" id="stop">Stop</button>
+              <button class="time-button button" id="reset">Reset</button>
+            </div>
           </div>
-          <div class="timer-controls">
-            <button class="timer-button button" id="start">Start</button>
-            <button class="timer-button button" id="stop">Stop</button>
-            <button class="timer-button button" id="reset">Reset</button>
+
+          <div class="best-time-section time-block-item">
+            <h3 class="timer-header">Ваше лучше время</h3>
+            <div class="time-container">
+              <div class="best-time time">00:00:00</div>
+            </div>
+
+            <div class="best-time-contols">
+              <button class="time-button button" id="best-time-reset">
+                Reset
+              </button>
+            </div>
           </div>
+
+          <!-- <div class="sum-time-section time-block-item">
+            <div class="time-container">
+              <div class="sum-time time">00:00:00</div>
+            </div>
+
+            <div class="sum-time-contols">
+              <button class="time-button button" id="sum-time-reset">
+                Reset
+              </button>
+            </div>
+          </div> -->
         </div>
       </div>
     </main>
