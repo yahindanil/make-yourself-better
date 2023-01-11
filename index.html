@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="assets/css/Header.css" />
     <link rel="stylesheet" href="assets/css/Timer.css" />
 
-    <script src="scripts/linkButton.js"></script>
-    <script src="scripts/timer.js"></script>
+    <script src="scripts/Links functions/openAllLinks.js"></script>
+    <script
+      type="module"
+      src="scripts/Time functions/Browser logic/timerBrowser.js"
+    ></script>
 
     <title>Сделай себя лучше!</title>
   </head>
@@ -69,32 +72,26 @@
             </div>
 
             <div class="timer-controls">
-              <button class="time-button button" id="start">Start</button>
-              <button class="time-button button" id="stop">Stop</button>
-              <button class="time-button button" id="reset">Reset</button>
+              <button class="time-button button" id="timer-start-btn">
+                Start
+              </button>
+              <button class="time-button button" id="timer-stop-btn">
+                Stop
+              </button>
+              <button class="time-button button" id="timer-reset-btn">
+                Reset
+              </button>
             </div>
           </div>
 
-          <div class="best-time-section time-block-item">
-            <h3 class="timer-header">Ваше лучше время</h3>
+          <!-- <div class="best-time-section time-block-item">
+            <h3 class="timer-header">Ваше лучшее время</h3>
             <div class="time-container">
               <div class="best-time time">00:00:00</div>
             </div>
 
             <div class="best-time-contols">
               <button class="time-button button" id="best-time-reset">
-                Reset
-              </button>
-            </div>
-          </div>
-
-          <!-- <div class="sum-time-section time-block-item">
-            <div class="time-container">
-              <div class="sum-time time">00:00:00</div>
-            </div>
-
-            <div class="sum-time-contols">
-              <button class="time-button button" id="sum-time-reset">
                 Reset
               </button>
             </div>
