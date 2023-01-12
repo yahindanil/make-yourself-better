@@ -2,13 +2,6 @@
   margin-bottom: 10px;
 }
 
-.links-to-start-block {
-  border: 3px solid black;
-  padding: 10px;
-  border-radius: 7px;
-  margin-bottom: 10px;
-}
-
 .links-to-start {
   display: flex;
   justify-content: space-between;
