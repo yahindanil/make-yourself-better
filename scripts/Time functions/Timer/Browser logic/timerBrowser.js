@@ -9,11 +9,12 @@ import {
 const time_display = document.querySelector(".timer");
 
 const timer_start_btn = document.getElementById("timer-start-btn");
-const timer_stop_btn = document.getElementById("timer-stop-btn");
-const timer_reset_btn = document.getElementById("timer-reset-btn");
-
 timer_start_btn.addEventListener("click", startTimerBrowser);
+
+const timer_stop_btn = document.getElementById("timer-stop-btn");
 timer_stop_btn.addEventListener("click", timerStopBrowser);
+
+const timer_reset_btn = document.getElementById("timer-reset-btn");
 timer_reset_btn.addEventListener("click", timerResetBrowser);
 
 //Меняет значение таймера при запуске сайта
@@ -21,7 +22,8 @@ if (localStorage.getItem("localSecondsOnBrowserRestart") > 0) {
   time_display.innerText = secondsToString(
     localStorage.getItem("localSecondsOnBrowserRestart")
   );
-  console.log("test");
+} else {
+  time_display.innerText = secondsToString(0);
 }
 
 let interval = null;
@@ -43,15 +45,17 @@ function changeTime() {
 }
 
 function timerStopBrowser() {
-  clearInterval(interval);
-  isIntervalRunning = false;
-
+  stopInterval();
   saveSecondsOnStop();
 }
 
 function timerResetBrowser() {
-  timerStopBrowser();
-  time_display.innerText = "00:00:00";
-
+  stopInterval();
   resetTimerBusiness();
+  time_display.innerText = secondsToString(0);
+}
+
+function stopInterval() {
+  clearInterval(interval);
+  isIntervalRunning = false;
 }
