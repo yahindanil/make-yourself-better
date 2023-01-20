@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 800px;
-  background-color: #ffe4b5;
+  background-color: #dfc18d;
   font-size: 20px;
 }
 
@@ -25,6 +25,18 @@ h3 {
   padding: 0;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
 .button {
   display: inline-block;
   color: black;
@@ -38,12 +50,36 @@ h3 {
 
 .button:hover {
   color: black;
-  background-color: #1e90ff;
+  background-color: #ff7f50;
   cursor: pointer;
 }
 
 .button:active {
-  color: #1e90ff;
-  background-color: black;
-  /* transform: scale(0.96); */
+  transform: scale(0.98);
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+input {
+  border: solid 3px;
+  border-radius: 8px;
+  padding: 5px 9px;
+  width: 654px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.fas {
+  scale: 150%;
 }

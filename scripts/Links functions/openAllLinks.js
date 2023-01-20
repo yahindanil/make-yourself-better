@@ -1,3 +1,6 @@
+const open_all_links_btn = document.getElementById("open-all-links");
+open_all_links_btn.addEventListener("click", openAllLinks);
+
 function openAllLinks() {
   let locs = [
     "https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl",

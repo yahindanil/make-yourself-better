@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="x-icon" href="assets/images/pencil.png" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="assets/css/Main.css" />
     <link rel="stylesheet" href="assets/css/Links.css" />
     <link rel="stylesheet" href="assets/css/Header.css" />
     <link rel="stylesheet" href="assets/css/Timer.css" />
-
-    <script src="scripts/Links functions/openAllLinks.js"></script>
-    <script
-      type="module"
-      src="scripts/Time functions/Timer/Browser logic/timerBrowser.js"
-    ></script>
-    <script
-      type="module"
-      src="scripts/Time functions/Record time/Browser logic/recordTimeBrowser.js"
-    ></script>
+    <link rel="stylesheet" href="assets/css/ToDoListInput.css" />
+    <link rel="stylesheet" href="assets/css/ToDoList.css" />
 
     <title>Сделай себя лучше!</title>
   </head>
@@ -35,6 +35,37 @@
       <div class="container">
         <div class="links-to-start-block border-container">
           <h2 class="lintk-to-start-header">Ссылки:</h2>
+
+          <!-- <form class="links-add-container">
+            <imput
+              type="text"
+              class="links-imput"
+              spellcheck="false"
+              placeholder="Название ссылки"
+            />
+          </form>
+          <button class="links-add-button button" type="submit">
+            <i class="fas fa-plus-square"></i>
+          </button> -->
+          <!-- <form class="todo-add-container">
+            <input
+              type="text"
+              class="todo-input"
+              spellcheck="false"
+              placeholder="Что вы хотите сделать?"
+            />
+            <button class="todo-button button" type="submit">
+              <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+              <select name="todos" class="filter-todo border-container">
+                <option value="all">Всё</option>
+                <option value="completed">Выполненные</option>
+                <option value="uncompleted">Незаконченные</option>
+              </select>
+            </div>
+          </form> -->
+
           <div class="links-to-start">
             <div class="links-container">
               <a
@@ -57,11 +88,7 @@
               </a>
             </div>
             <div>
-              <button
-                class="open_all_links_button button"
-                id="open_all_links"
-                onclick="openAllLinks()"
-              >
+              <button class="open_all_links_button button" id="open-all-links">
                 Открыть всё!
               </button>
             </div>
@@ -91,7 +118,7 @@
           </div>
 
           <div class="best-time-section time-block-item border-container">
-            <h3 class="timer-header">Ваше лучшее время</h3>
+            <h3 class="timer-header">Твоё лучшее время</h3>
             <div class="display-buttons-container">
               <div class="time-container">
                 <div class="best-time time"></div>
@@ -105,7 +132,58 @@
             </div>
           </div>
         </div>
+
+        <div class="todo-block border-container">
+          <h2 class="todo-header">Список дел</h2>
+
+          <form class="todo-add-container">
+            <input
+              type="text"
+              class="todo-input"
+              spellcheck="false"
+              placeholder="Что вы хотите сделать?"
+            />
+            <button class="todo-button button" type="submit">
+              <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+              <select name="todos" class="filter-todo border-container">
+                <option value="all">Всё</option>
+                <option value="completed">Выполненные</option>
+                <option value="uncompleted">Незаконченные</option>
+              </select>
+            </div>
+          </form>
+
+          <div class="todo-container">
+            <ul class="todo-list">
+              <!-- <div class="todo">
+                <li class="todo-item border-container">hey</li>
+                <button class="check-button button todo-list-button">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button class="trash-button button todo-list-button">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div> -->
+            </ul>
+          </div>
+        </div>
       </div>
     </main>
   </body>
+
+  <script src="scripts/Links functions/openAllLinks.js"></script>
+  <script src="scripts/Links functions/addLinks.js"></script>
+
+  <script
+    type="module"
+    src="scripts/Time functions/Timer/Browser logic/timerBrowser.js"
+  ></script>
+  <script
+    type="module"
+    src="scripts/Time functions/Record time/Browser logic/recordTimeBrowser.js"
+  ></script>
+
+  <script src="scripts/To Do List/toDo.js"></script>
 </html>

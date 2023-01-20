@@ -1,7 +1,3 @@
-if (!localStorage.getItem("recodTimeLoacal")) {
-  localStorage.setItem("recodTimeLoacal", 0);
-}
-
 if (!localStorage.getItem("localSecondsOnBrowserRestart")) {
   localStorage.setItem("localSecondsOnBrowserRestart", 0);
 }

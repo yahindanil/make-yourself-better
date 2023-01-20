@@ -1,0 +1,19 @@
+.todo-add-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-button {
+  padding: 13px 15px;
+  margin-bottom: 10px;
+}
+
+.todo-button i {
+  scale: 150%;
+}
+
+.filter-todo {
+  font-size: 25px;
+  padding: 5px;
+}
