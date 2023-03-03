@@ -48,6 +48,15 @@ ul {
   padding: 5px 9px;
 }
 
+.submit-button {
+  padding: 13px 15px;
+  margin-bottom: 10px;
+}
+
+.submit-button i {
+  scale: 150%;
+}
+
 .button:hover {
   color: black;
   background-color: #ff7f50;

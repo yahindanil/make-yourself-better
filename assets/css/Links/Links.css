@@ -1,0 +1,39 @@
+.lintk-to-start-header {
+  margin-bottom: 10px;
+}
+
+.links-to-start {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links-to-start .link-to-start-item {
+  margin-right: 5px;
+}
+
+.links-add-container {
+  display: block;
+}
+
+.links-add-button {
+  position: relative;
+  top: -4px;
+  left: 3px;
+}
+
+.links-list {
+  margin: 0;
+}
+
+.links-list-trash-button {
+  padding: 9px 11px;
+  margin-bottom: 8px;
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+}
+
+.open_all_links_button {
+  margin-right: 5px;
+  font-size: 20px;
+}

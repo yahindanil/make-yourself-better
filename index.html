@@ -15,11 +15,11 @@
     />
 
     <link rel="stylesheet" href="assets/css/Main.css" />
-    <link rel="stylesheet" href="assets/css/Links.css" />
+    <link rel="stylesheet" href="assets/css/Links/Links.css" />
     <link rel="stylesheet" href="assets/css/Header.css" />
     <link rel="stylesheet" href="assets/css/Timer.css" />
-    <link rel="stylesheet" href="assets/css/ToDoListInput.css" />
-    <link rel="stylesheet" href="assets/css/ToDoList.css" />
+    <link rel="stylesheet" href="assets/css/ToDoList/ToDoList.css" />
+    <link rel="stylesheet" href="assets/css/ToDoList/ToDoListInput.css" />
 
     <title>Сделай себя лучше!</title>
   </head>
@@ -34,64 +34,55 @@
     <main>
       <div class="container">
         <div class="links-to-start-block border-container">
-          <h2 class="lintk-to-start-header">Ссылки:</h2>
+          <h2>Ссылки</h2>
 
-          <!-- <form class="links-add-container">
-            <imput
+          <button
+            class="links-hide-button button submit-button"
+            id="hide-links-form"
+          >
+            <i class="fas fa-plus-square"></i>
+          </button>
+
+          <form class="links-add-container">
+            <input
               type="text"
-              class="links-imput"
+              class="links-name-input links-input"
               spellcheck="false"
               placeholder="Название ссылки"
             />
-          </form>
-          <button class="links-add-button button" type="submit">
-            <i class="fas fa-plus-square"></i>
-          </button> -->
-          <!-- <form class="todo-add-container">
             <input
               type="text"
-              class="todo-input"
+              class="links-link-input links-input"
               spellcheck="false"
-              placeholder="Что вы хотите сделать?"
+              placeholder="Ссылка"
             />
-            <button class="todo-button button" type="submit">
+            <button class="links-add-button button submit-button" type="submit">
               <i class="fas fa-plus-square"></i>
             </button>
-            <div class="select">
-              <select name="todos" class="filter-todo border-container">
-                <option value="all">Всё</option>
-                <option value="completed">Выполненные</option>
-                <option value="uncompleted">Незаконченные</option>
-              </select>
-            </div>
-          </form> -->
+          </form>
 
-          <div class="links-to-start">
-            <div class="links-container">
-              <a
-                class="link-to-start-item button"
-                href="https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
-              >
-                LofiGirl
-              </a>
-              <a
-                class="link-to-start-item button"
-                href="https://learn.javascript.ru/"
-              >
-                LearnJavaScript
-              </a>
-              <a
-                class="link-to-start-item button"
-                href="https://docs.google.com/document/d/1feWvbbsMW4zLiFgQLqTqNR1UU4IEevh4XN-0fDk1qFY/edit"
-              >
-                Document
-              </a>
-            </div>
-            <div>
-              <button class="open_all_links_button button" id="open-all-links">
-                Открыть всё!
-              </button>
-            </div>
+          <div class="links-container">
+            <ul class="links-list">
+              <!-- <div class="link">
+                <li class="link-block">
+                  <a
+                    class="link-item button"
+                    href="https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
+                  >
+                    LofiGirl
+                  </a>
+
+                  <button class="links-list-trash-button trash-button button">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </li>
+              </div> -->
+            </ul>
+          </div>
+          <div>
+            <button class="open_all_links_button button" id="open-all-links">
+              Открыть всё!
+            </button>
           </div>
         </div>
 
@@ -143,7 +134,7 @@
               spellcheck="false"
               placeholder="Что вы хотите сделать?"
             />
-            <button class="todo-button button" type="submit">
+            <button class="todo-button button submit-button" type="submit">
               <i class="fas fa-plus-square"></i>
             </button>
             <div class="select">
@@ -175,6 +166,7 @@
 
   <script src="scripts/Links functions/openAllLinks.js"></script>
   <script src="scripts/Links functions/addLinks.js"></script>
+  <script src="scripts/Links functions/HideLinksForm.js"></script>
 
   <script
     type="module"
