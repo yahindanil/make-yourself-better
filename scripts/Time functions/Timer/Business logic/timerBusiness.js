@@ -18,6 +18,7 @@ export function getTime() {
     secondsSavedOnStop +
     secondsOnBrowserRestart;
 
+  secondsOnBrowserRestart = 0;
   localStorage.setItem("localSecondsOnBrowserRestart", seconds);
 
   if (localStorage.getItem("recodTimeLoacal") < seconds) {

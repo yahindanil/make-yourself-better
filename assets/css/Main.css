@@ -92,3 +92,7 @@ input {
 .fas {
   scale: 150%;
 }
+
+.hidden {
+  display: none;
+}

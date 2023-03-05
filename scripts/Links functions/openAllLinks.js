@@ -1,5 +1,5 @@
-const open_all_links_btn = document.getElementById("open-all-links");
-open_all_links_btn.addEventListener("click", openAllLinks);
+const OpenAllLinksBtn = document.getElementById("open-all-links");
+OpenAllLinksBtn.addEventListener("click", openAllLinks);
 
 function openAllLinks() {
   let links;
@@ -11,5 +11,17 @@ function openAllLinks() {
 
   for (let link of links) {
     window.open(link.link);
+  }
+}
+
+if (JSON.parse(localStorage.getItem("links")).length >= 2) {
+  OpenAllLinksBtn.classList.remove("hidden");
+}
+
+export function hideRevealOpenAllLinks(element) {
+  if (JSON.parse(localStorage.getItem("links")).length < 2) {
+    OpenAllLinksBtn.classList.add("hidden");
+  } else {
+    OpenAllLinksBtn.classList.remove("hidden");
   }
 }

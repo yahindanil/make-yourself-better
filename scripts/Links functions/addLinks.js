@@ -1,3 +1,5 @@
+import { hideRevealOpenAllLinks } from "../Links functions/openAllLinks.js";
+
 const linksNameInput = document.querySelector(".links-name-input");
 const linksLinkInput = document.querySelector(".links-link-input");
 const addLinkButton = document.querySelector(".links-add-button");
@@ -49,6 +51,8 @@ function addLink(event) {
   //Clear Inputs
   linksNameInput.value = "";
   linksLinkInput.value = "";
+
+  hideRevealOpenAllLinks();
 }
 
 function deleteLink(element) {
@@ -58,6 +62,8 @@ function deleteLink(element) {
     const link = item.parentElement;
     removeLocalLinks(link.innerText);
     link.remove();
+
+    hideRevealOpenAllLinks();
   }
 }
 

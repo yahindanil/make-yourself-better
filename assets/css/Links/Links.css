@@ -1,18 +1,25 @@
 .lintk-to-start-header {
-  margin-bottom: 10px;
-}
-
-.links-to-start {
   display: flex;
   justify-content: space-between;
 }
 
-.links-to-start .link-to-start-item {
-  margin-right: 5px;
+.lintk-to-start-header h2 {
+  margin: 0;
 }
 
-.links-add-container {
-  display: block;
+.lintk-to-start-header .links-hide-button {
+  margin: 0;
+  height: 45px;
+  width: 45px;
+}
+
+.links-input:first-of-type {
+  width: 750px;
+  margin-top: 10px;
+}
+
+.links-input {
+  width: 696px;
 }
 
 .links-add-button {

@@ -34,16 +34,22 @@
     <main>
       <div class="container">
         <div class="links-to-start-block border-container">
-          <h2>Ссылки</h2>
+          <div class="lintk-to-start-header">
+            <h2>Ссылки</h2>
 
-          <button
-            class="links-hide-button button submit-button"
-            id="hide-links-form"
-          >
-            <i class="fas fa-plus-square"></i>
-          </button>
+            <button
+              class="links-hide-button button submit-button"
+              id="hide-links-form"
+            >
+              <i
+                class="fa-solid fa-minus links-add-minus hidden"
+                image.pngimage.png
+              ></i>
+              <i class="fa-solid fa-plus links-add-plus"></i>
+            </button>
+          </div>
 
-          <form class="links-add-container">
+          <form class="links-add-container hidden">
             <input
               type="text"
               class="links-name-input links-input"
@@ -80,7 +86,10 @@
             </ul>
           </div>
           <div>
-            <button class="open_all_links_button button" id="open-all-links">
+            <button
+              class="open_all_links_button button hidden"
+              id="open-all-links"
+            >
               Открыть всё!
             </button>
           </div>
@@ -164,10 +173,12 @@
     </main>
   </body>
 
-  <script src="scripts/Links functions/openAllLinks.js"></script>
-  <script src="scripts/Links functions/addLinks.js"></script>
+  <!-- Ссылки -->
   <script src="scripts/Links functions/HideLinksForm.js"></script>
+  <script type="module" src="scripts/Links functions/openAllLinks.js"></script>
+  <script type="module" src="scripts/Links functions/addLinks.js"></script>
 
+  <!-- Таймер, рекорд -->
   <script
     type="module"
     src="scripts/Time functions/Timer/Browser logic/timerBrowser.js"
@@ -177,5 +188,6 @@
     src="scripts/Time functions/Record time/Browser logic/recordTimeBrowser.js"
   ></script>
 
+  <!-- TO DO LIST -->
   <script src="scripts/To Do List/toDo.js"></script>
 </html>
